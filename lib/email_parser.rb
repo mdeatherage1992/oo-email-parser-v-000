@@ -15,7 +15,7 @@ end
     list = emails.split(', ')
     large = list.max_by(&:length)
     list.each do |email|
-      if email == large && email.include? ' '
+      if email == large && email.include?(/\s/)
         third = email.split(' ')
         new_list << third
       else
