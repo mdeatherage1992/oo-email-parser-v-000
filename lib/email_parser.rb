@@ -14,14 +14,14 @@ end
     new_list = []
     list = emails.split(', ')
     large = list.max_by(&:length)
-    binding.pry
     list.each do |email|
-      if email.include? ","
-        email.delete(",")
-        new_list << email
-      else
+      if email == large && email.include? " "
+        third = email.split(' ')
+        new_list << third
+      else  
         new_list << email
       end
+      return new_list
     end
   end
 
