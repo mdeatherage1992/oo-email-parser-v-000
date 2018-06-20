@@ -12,9 +12,8 @@ end
 
   def parse
     new_list = []
-    list = @emails.split(", ")
-    binding.pry
-    list.each do |email|
+    list = emails.split('')
+    .each do |email|
       if email.include? ","
         email.delete(",")
         new_list << email
