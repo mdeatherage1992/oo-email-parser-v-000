@@ -13,11 +13,7 @@ end
   def parse
     list = @emails.split(" ")
     binding.pry
-      return list2
-    else
-      return list1
   end
-end
 
 end
 
