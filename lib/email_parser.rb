@@ -11,9 +11,18 @@ class EmailParser
 end
 
   def parse
+    new_list = []
     list = @emails.split(" ")
-    binding.pry
+    list.each do |email|
+      if email.include? ","
+        email.delete(",")
+        new_list << email
+      else
+        new_list << email
+      end
+    end
   end
+
 
 end
 
