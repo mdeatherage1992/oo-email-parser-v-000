@@ -22,7 +22,7 @@ end
         new_list << email
       end
     end
-    return new_list.join(' ')
+    return new_list.join(' ').split(' ')
   end
 
 
