@@ -21,8 +21,8 @@ end
       elsif !new_list.include? email
         new_list << email
       end
-      return new_list
     end
+    return new_list
   end
 
 
