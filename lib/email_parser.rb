@@ -13,6 +13,8 @@ end
   def parse
     new_list = []
     list = emails.split(', ')
+    large = list.max_by(&:length)
+    binding.pry
     list.each do |email|
       if email.include? ","
         email.delete(",")
