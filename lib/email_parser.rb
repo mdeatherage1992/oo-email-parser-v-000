@@ -12,7 +12,7 @@ end
 
   def parse
     new_list = []
-    list = emails.split(' ')
+    list = emails.split(',')
     list.each do |email|
       if email.include? ","
         email.delete(",")
