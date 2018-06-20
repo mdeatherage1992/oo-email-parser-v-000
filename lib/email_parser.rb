@@ -18,7 +18,7 @@ end
       if email == large && email.include?(" ")
         third = email.split(' ')
         new_list << third
-      else
+      elsif !new_list.include? email
         new_list << email
       end
       return new_list
